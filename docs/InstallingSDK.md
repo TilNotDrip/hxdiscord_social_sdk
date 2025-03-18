@@ -35,15 +35,15 @@ Make sure that you read the [Discord Social SDK Terms](https://support-dev.disco
 	Please see https://github.com/TilNotDrip/hxdiscord_social_sdk/docs/InstallingSDK.md for installing said libraries.
 	Install Path: [PATH]
 	```
-	- NOTICE: [PATH] is not the actual path.
+	- NOTICE: `[PATH]` is not the actual path.
 - `[PATH]` is the install path that we need.
 ### Step 2: Extracting the libraries
-1. Open the SDK archive file (.zip)
+1. Open the SDK archive file (`.zip`)
 	- We recommend not using the built-in archive viewer in Windows, get [`7-Zip`](https://www.7-zip.org/) or [`WinRAR`](https://www.win-rar.com) instead.
 2. Move everything in the `discord_social_sdk` folder to the install path we got from Step 1.
 	- If there is no `discord_social_sdk` folder, no worries! Just move everything from that archive in that folder.
 ### Step 3: Compiling your application
-You are all done! All you need to do now is to compile the application again so that hxdiscord_social_sdk can install the library.
+You are all done! All you need to do now is to compile the application again so that `hxdiscord_social_sdk` can install the library.
 
 ## Updating Discord Social SDK libraries.
 ### Step 1: Update the Discord Social SDK
