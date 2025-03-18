@@ -1,0 +1,23 @@
+{
+    "name": "hxdiscord_social_sdk",
+    "url": "https://github.com/TilNotDrip/hxdiscord_social_sdk/",
+    "license": "MIT",
+    "tags": [
+        "cpp",
+        "haxe",
+        "discord",
+		"discord_sdk",
+		"discord_social_sdk"
+    ],
+    "description": "Discord Social SDK integration for Haxe using hxcpp @:native externs.",
+    "version": "0.1.0",
+    "releasenote": "Initial release.",
+    "contributors": [
+		"CrusherNotDrip",
+        "TechnikTil"
+    ],
+    "classPath": "src",
+    "dependencies": {
+        "hxcpp": ""
+    }
+}

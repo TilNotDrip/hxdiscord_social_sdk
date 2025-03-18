@@ -1,0 +1,1 @@
+- [ ] Make a Macro that requires you to install the sdk.
