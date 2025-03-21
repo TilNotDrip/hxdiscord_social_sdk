@@ -1,4 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xml>
     <pragma once="true" />
+
+	<compilerflag value="-DDISCORDPP_IMPLEMENTATION" />
+
+	<files id="haxe">
+        <compilerflag value="-I${haxelib:hxdiscord_social_sdk}/externs/sdk/include" />
+    </files>
+
+	<files id="__main__">
+		<compilerflag value="-I${haxelib:hxdiscord_social_sdk}/externs/sdk/include" />
+	</files>
+
+	<target id="haxe">
+		<section if="release">
+			<lib name="${haxelib:hxdiscord_social_sdk}/externs/sdk/lib/release/discord_partner_sdk.lib" if="windows" />
+			<lib name="${haxelib:hxdiscord_social_sdk}/externs/sdk/lib/release/discord_partner_sdk.so" if="linux" />
+			<lib name="${haxelib:hxdiscord_social_sdk}/externs/sdk/lib/release/discord_partner_sdk.dylib" if="macos" />
+		</section>
+
+		<section if="debug">
+			<lib name="${haxelib:hxdiscord_social_sdk}/externs/sdk/lib/debug/discord_partner_sdk.lib" if="windows" />
+			<lib name="${haxelib:hxdiscord_social_sdk}/externs/sdk/lib/debug/discord_partner_sdk.so" if="linux" />
+			<lib name="${haxelib:hxdiscord_social_sdk}/externs/sdk/lib/debug/discord_partner_sdk.dylib" if="macos" />
+		</section>
+	</target>
+
+	<compiler id='MSVC' exe='cl.exe' if='windows'>
+        <flag value = '/std:c++17'/>
+    </compiler>
 </xml>
