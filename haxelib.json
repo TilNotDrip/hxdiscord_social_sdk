@@ -13,8 +13,7 @@
     "version": "0.1.0",
     "releasenote": "Initial release.",
     "contributors": [
-		"CrusherNotDrip",
-        "TechnikTil"
+		"TilNotDrip"
     ],
     "classPath": "src",
     "dependencies": {
